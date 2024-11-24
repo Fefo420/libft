@@ -6,7 +6,7 @@
 /*   By: fileonar <fileonar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 14:32:58 by fileonar          #+#    #+#             */
-/*   Updated: 2024/10/17 19:00:26 by fileonar         ###   ########.fr       */
+/*   Updated: 2024/11/24 18:27:07 by fileonar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 # include <unistd.h>
 # include <stdlib.h>
+# include "get_next_line.h"
+# include "ft_printf.h"
 
 void	ft_bzero(void *s, size_t n);
 int		ft_isalnum(int a);
@@ -49,4 +51,6 @@ char	*ft_itoa(int n);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
+void	ft_free_n_null(void **ptr);
+
 #endif
