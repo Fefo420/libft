@@ -10,7 +10,9 @@ SRCS = ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c \
 	ft_strdup.c ft_putnbr_fd.c ft_putendl_fd.c ft_putstr_fd.c ft_putchar_fd.c \
 	ft_striteri.c ft_strmapi.c ft_substr.c ft_itoa.c ft_strjoin.c ft_strtrim.c \
 	ft_split.c ft_printf.c ft_putchar.c ft_puthexa.c ft_putnbr.c ft_putptr.c \
-	ft_putstr.c ft_putuns.c get_next_line.c ft_strcat.c
+	ft_putstr.c ft_putuns.c get_next_line.c ft_strcat.c ft_free_n_null.c \
+
+
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
