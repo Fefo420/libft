@@ -6,7 +6,7 @@
 /*   By: fileonar <fileonar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 17:57:32 by fileonar          #+#    #+#             */
-/*   Updated: 2024/10/17 18:01:18 by fileonar         ###   ########.fr       */
+/*   Updated: 2025/02/19 19:26:03 by fileonar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int	ft_atoi(const char *str)
 	int	sign;
 
 	nr = 0;
+	sign = 1;
 	i = ft_whitespaces(str);
 	if (str[i] == '-')
 	{
@@ -37,16 +38,11 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	else if (str[i] == '+')
-	{
-		sign = 1;
 		i++;
-	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		nr = nr * 10 + (str[i] - '0');
 		i++;
 	}
-	if (sign == -1)
-		nr = nr * -1;
-	return (nr);
+	return (nr * sign);
 }
