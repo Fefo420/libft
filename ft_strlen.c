@@ -6,7 +6,7 @@
 /*   By: fileonar <fileonar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 10:50:46 by fileonar          #+#    #+#             */
-/*   Updated: 2024/10/10 14:10:01 by fileonar         ###   ########.fr       */
+/*   Updated: 2025/06/23 16:22:14 by fileonar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	ft_strlen(const char *a)
 	size_t	i;
 
 	i = 0;
+	if (a == NULL)
+		return (0);
 	while (a[i] != '\0')
 	{
 		i++;
